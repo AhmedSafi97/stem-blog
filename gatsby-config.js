@@ -1,6 +1,5 @@
 module.exports = {
   plugins: [
-    'gatsby-plugin-offline',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -13,5 +12,6 @@ module.exports = {
         icon: `src/assets/icon.svg`,
       },
     },
+    "gatsby-plugin-offline",
   ],
 }
