@@ -22,12 +22,6 @@
     flex-direction: column;
   }
   .wrapper > a {
-    padding-left: 125px;
-  }
-}
-
-@media (max-width: 640px) {
-  .wrapper > a {
     padding-left: 18px;
   }
 }
