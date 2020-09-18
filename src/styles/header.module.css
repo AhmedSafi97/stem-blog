@@ -1,0 +1,27 @@
+.wrapper {
+  padding: 0 135px;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 0 125px;
+  }
+  .search_component > div {
+    margin-right: 53px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 96px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    padding: 0 18px;
+  }
+}

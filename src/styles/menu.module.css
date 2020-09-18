@@ -1,12 +1,14 @@
 .wrapper {
-  position: relative;
+  position: absolute;
+  right: 0px;
+  top: 0px;
   height: 100vh;
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 }
 
 .wrapper_closed {
   background: transparent;
-  width: 35px;
+  width: 0;
 }
 
 .wrapper_open {
@@ -21,8 +23,8 @@
   background: transparent;
   cursor: pointer;
   position: absolute;
-  right: 18px;
-  top: 18px;
+  right: 125px;
+  top: 12.5px;
 }
 
 .bar {
@@ -67,4 +69,16 @@
 
 .nav {
   padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    right: 96px;
+  }
+}
+
+@media (max-width: 640px) {
+  .btn {
+    right: 18px;
+  }
 }
