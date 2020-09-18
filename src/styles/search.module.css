@@ -1,0 +1,29 @@
+.wrapper {
+  display: inline-block;
+}
+
+.input {
+  font-size: 16px;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  width: 23px;
+  padding: 4px 4px 4px 35px;
+  background: transparent;
+  background-image: url(../assets/search.svg);
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 4px;
+  transition: width 0.2s ease, padding 0.2s ease;
+  overflow: visible;
+}
+
+.input:focus {
+  width: 160px;
+  padding-left: 35px;
+}
+
+.input::placeholder {
+  color: #fff;
+}
