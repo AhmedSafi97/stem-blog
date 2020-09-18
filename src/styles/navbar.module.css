@@ -1,0 +1,33 @@
+.wrapper {
+  width: 527px;
+  padding: 19.5px 0;
+  background-color: var(--primary);
+}
+
+.wrapper > a {
+  padding: 19.5px 21.5px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.wrapper > a:hover {
+  background-color: #fff;
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper > a {
+    padding-left: 125px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper > a {
+    padding-left: 18px;
+  }
+}
