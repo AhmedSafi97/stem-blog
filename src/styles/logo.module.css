@@ -1,6 +1,6 @@
 .wrapper {
   width: 83px;
-  background-color: #000;
+  background-color: var(--primary);
 }
 .link {
   text-decoration: none;
