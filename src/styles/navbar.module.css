@@ -4,24 +4,37 @@
   background-color: var(--primary);
 }
 
-.wrapper > a {
+.link {
   padding: 19.5px 21.5px;
   font-size: 18px;
   color: #fff;
 }
 
-.wrapper > a:hover {
+.link:hover {
   background-color: #fff;
   color: var(--primary);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .wrapper {
     width: inherit;
     display: flex;
     flex-direction: column;
   }
-  .wrapper > a {
+  .link {
+    padding: 19.5px 0;
+    padding-left: 125px;
+  }
+}
+
+@media (max-width: 768px) {
+  .link {
+    padding-left: 96px;
+  }
+}
+
+@media (max-width: 640px) {
+  .link {
     padding-left: 18px;
   }
 }
