@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import styles from "../styles/home.module.css"
-import { Layout, LatestArticle } from "../components"
+import { Layout, LatestArticle, Article } from "../components"
 
 const Home = ({ data }) => {
   const articles = data.allMarkdownRemark.nodes
@@ -15,6 +15,9 @@ const Home = ({ data }) => {
           article={firstArticle.frontmatter}
           slug={firstArticle.fields.slug}
         />
+        {articles.slice(1).map(({ frontmatter, fields }) => (
+          <Article key={fields.slug} article={frontmatter} slug={fields.slug} />
+        ))}
       </div>
     </Layout>
   )
