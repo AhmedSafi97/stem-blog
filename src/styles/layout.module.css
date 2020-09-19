@@ -1,0 +1,28 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.children_wrapper {
+  padding: 18px 135px;
+}
+
+@media (max-width: 1024px) {
+  .children_wrapper {
+    padding: 18px 125px;
+  }
+}
+
+@media (max-width: 768px) {
+  .children_wrapper {
+    padding: 18px 96px;
+  }
+}
+
+@media (max-width: 640px) {
+  .children_wrapper {
+    padding: 18px 18px;
+  }
+}
