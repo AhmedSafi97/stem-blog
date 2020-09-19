@@ -1,0 +1,46 @@
+.wrapper {
+  padding: 18px 135px;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+}
+
+.logo > h1 {
+  padding: 0;
+}
+
+.nav > nav {
+  padding: 18px 0;
+}
+
+.nav a {
+  padding: 0;
+  margin-right: 19.5px;
+}
+
+.copy {
+  font-size: 18px;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 18px 125px;
+  }
+  .nav a {
+    padding: 19.5px 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 18px 96px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    padding: 18px 18px;
+  }
+}
