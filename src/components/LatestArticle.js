@@ -9,7 +9,7 @@ const LatestArticle = ({ article, slug }) => {
 
   return (
     <div className={`${styles[category]} ${styles.container}`}>
-      <Link to={slug} className={styles.article}>
+      <Link to={slug}>
         <section>
           <Img fluid={image.childImageSharp.fluid} alt={title} />
           <div className={styles.wrapper}>
