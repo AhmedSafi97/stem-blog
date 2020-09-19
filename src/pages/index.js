@@ -5,9 +5,19 @@ import styles from "../styles/home.module.css"
 import { Layout, LatestArticle } from "../components"
 
 const Home = ({ data }) => {
-  console.log(data)
+  const articles = data.allMarkdownRemark.nodes
+  const firstArticle = articles[0]
 
-  return <h1>STEM</h1>
+  return (
+    <Layout>
+      <div className={styles.container}>
+        <LatestArticle
+          article={firstArticle.frontmatter}
+          slug={firstArticle.fields.slug}
+        />
+      </div>
+    </Layout>
+  )
 }
 
 export default Home
