@@ -1,7 +1,26 @@
+const path = require(`path`)
+
 module.exports = {
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `articles`,
+        path: path.join(__dirname, `src`, `content`, `articles`),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `content`, `images`),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-svg`,
       options: {
         rule: {
           include: /\.inline\.svg$/,
@@ -20,6 +39,6 @@ module.exports = {
         icon: `src/assets/icon.svg`,
       },
     },
-    "gatsby-plugin-offline",
+    `gatsby-plugin-offline`,
   ],
 }
