@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header className={styles.wrapper}>
       <Logo />
-      {windowWidth > 1024 ? <NavBar /> : <Menu />}
+      {windowWidth <= 1024 ? <Menu /> : <NavBar />}
       <div className={styles.search_component}>
         <Search />
       </div>
