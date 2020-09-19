@@ -7,6 +7,7 @@
 
 .children_wrapper {
   padding: 18px 135px 0 135px;
+  flex-grow: 1;
 }
 
 @media (max-width: 1024px) {
