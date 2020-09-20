@@ -23,14 +23,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `articles`,
-        path: path.join(__dirname, `src`, `content`, `articles`),
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `content`, `images`),
+        path: path.join(__dirname, `src`, `content`),
       },
     },
     {
@@ -50,9 +43,16 @@ module.exports = {
         background_color: `#E5E5E5`,
         theme_color: `#E5E5E5`,
         display: `standalone`,
-        icon: `src/assets/icon.svg`,
+        icon: path.join(`src`, `assets`, `icon.svg`),
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: path.join(__dirname, "src", "cms", "cms.js"),
+      },
+    },
+    "gatsby-plugin-netlify",
   ],
 }

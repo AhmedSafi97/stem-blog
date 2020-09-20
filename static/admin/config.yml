@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: netlify-deploy
+  commit_messages:
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
+
+media_folder: src/content
+public_folder: /images
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content"
+    path: "{{category}}/{{slug}}"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["science", "technology", "engineering", "mathematics"],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
