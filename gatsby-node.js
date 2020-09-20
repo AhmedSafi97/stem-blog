@@ -14,7 +14,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-exports.createPages = ({ actions }) => {
+exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
   const categories = ["science", "technology", "engineering", "mathematics"]
 
@@ -27,4 +27,28 @@ exports.createPages = ({ actions }) => {
       },
     })
   )
+
+  const slugs = await graphql(`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  slugs.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve("./src/templates/articlePage.js"),
+      context: {
+        slug: node.fields.slug,
+      },
+    })
+  })
 }

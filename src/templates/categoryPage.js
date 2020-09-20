@@ -5,7 +5,7 @@ import styles from "../styles/categoryPage.module.css"
 import { Layout, Article } from "../components"
 import { capitalizeFirstLetter } from "../utils"
 
-const categoryPage = ({ data, pageContext }) => {
+const CategoryPage = ({ data, pageContext }) => {
   const title = capitalizeFirstLetter(pageContext.category)
 
   return (
@@ -26,7 +26,7 @@ const categoryPage = ({ data, pageContext }) => {
   )
 }
 
-export default categoryPage
+export default CategoryPage
 
 export const query = graphql`
   query($category: String!) {
