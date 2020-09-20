@@ -6,27 +6,17 @@ import NavBar from "./NavBar"
 import Menu from "./Menu"
 import Search from "./Search"
 
-const Header = () => {
-  const [windowWidth, setWindowWidth] = useState()
-
-  useEffect(() => {
-    if (typeof window === "undefined") return
-
-    const handleResize = () => setWindowWidth(window.innerWidth)
-    window.addEventListener("resize", handleResize)
-
-    return () => window.removeEventListener("resize", handleResize)
-  })
-
-  return (
-    <header className={styles.wrapper}>
-      <Logo />
-      {windowWidth <= 1024 ? <Menu /> : <NavBar />}
-      <div className={styles.search_component}>
-        <Search />
-      </div>
-    </header>
-  )
-}
+const Header = () => (
+  <header className={styles.wrapper}>
+    <Logo />
+    <div className={styles.navigation}>
+      <Menu />
+      <NavBar />
+    </div>
+    <div className={styles.search_component}>
+      <Search />
+    </div>
+  </header>
+)
 
 export default Header

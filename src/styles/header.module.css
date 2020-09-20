@@ -5,12 +5,22 @@
   align-items: center;
 }
 
+.navigation > div {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .wrapper {
     padding: 0 125px;
   }
   .search_component > div {
     margin-right: 53px;
+  }
+  .navigation > div {
+    display: block;
+  }
+  .navigation > nav {
+    display: none;
   }
 }
 
