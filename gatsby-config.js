@@ -35,6 +35,18 @@ module.exports = {
       },
     },
     {
+      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+      options: {
+        fields: [`title`],
+        resolvers: {
+          MarkdownRemark: {
+            title: node => node.frontmatter.title,
+            path: node => node.fields.slug,
+          },
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `STEM blog`,
