@@ -6,6 +6,7 @@
   --red: #b52e1e;
   --blue: #235588;
   --purple: #7e2e67;
+  --shadow: 0px 0px 12.5px 0px rgba(2, 2, 58, 0.5);
 }
 
 body {

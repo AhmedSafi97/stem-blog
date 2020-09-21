@@ -2,6 +2,7 @@
   background-color: #fff;
   grid-column: 1 / 9;
   margin-bottom: 18px;
+  box-shadow: var(--shadow);
 }
 
 .science {
@@ -20,6 +21,12 @@
   border-left: var(--primary) solid 5px;
 }
 
+.container section {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  height: 420px;
+}
+
 .wrapper {
   padding: 18px;
 }
@@ -32,6 +39,8 @@
   letter-spacing: 0;
   color: var(--primary);
   margin-bottom: 9px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .date {
@@ -47,6 +56,9 @@
 @media (max-width: 640px) {
   .container {
     grid-column: 1 / 5;
+  }
+  .container section {
+    height: 210px;
   }
   .title {
     font-size: 18px;

@@ -12,7 +12,12 @@ const ArticlePage = ({ data }) => {
   return (
     <Layout>
       <div className={styles.container}>
-        <Img fluid={image.childImageSharp.fluid} alt={title} />
+        <Img
+          className={styles.image}
+          fluid={image.childImageSharp.fluid}
+          alt={title}
+        />
+
         <article className={`${styles[category]} ${styles.article}`}>
           <h2 className={styles.title}>{title}</h2>
           <span className={styles.date}>{date}</span>
