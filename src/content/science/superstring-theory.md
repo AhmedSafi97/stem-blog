@@ -4,6 +4,8 @@ date: 2020-09-20T16:54:00.000Z
 image: calabi_yau_formatted.svg.png
 category: science
 ---
+This article is copied from wikipedia for educational purposes, [see the original article](https://en.wikipedia.org/wiki/Superstring_theory)
+
 Superstring theory is an attempt to explain all of the particles and fundamental forces of nature in one theory by modeling them as vibrations of tiny supersymmetric strings.
 
 _Superstring_ theory is a shorthand for supersymmetric string theory because unlike bosonic string theory, it is the version of string theory that accounts for both fermions and bosons and incorporates supersymmetry to model gravity.
