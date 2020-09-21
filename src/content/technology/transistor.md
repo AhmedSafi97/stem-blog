@@ -12,4 +12,6 @@ Austro-Hungarian physicist Julius Edgar Lilienfeld proposed the concept of a fie
 
 Transistors revolutionized the field of electronics, and paved the way for smaller and cheaper radios, calculators, and computers, among other things. The first transistor and the MOSFET are on the list of IEEE milestones in electronics. The MOSFET is the fundamental building block of modern electronic devices, and is ubiquitous in modern electronic systems. An estimated total of 13 sextillion MOSFETs have been manufactured between 1960 and 2018 (at least 99.9% of all transistors), making the MOSFET the most widely manufactured device in history.
 
+![transistor](transistorer_-cropped-.jpg "transistor")
+
 Most transistors are made from very pure silicon, and some from germanium, but certain other semiconductor materials are sometimes used. A transistor may have only one kind of charge carrier, in a field-effect transistor, or may have two kinds of charge carriers in bipolar junction transistor devices. Compared with the vacuum tube, transistors are generally smaller, and require less power to operate. Certain vacuum tubes have advantages over transistors at very high operating frequencies or high operating voltages. Many types of transistors are made to standardized specifications by multiple manufacturers.
