@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import "katex/dist/katex.min.css"
 
 import styles from "../styles/articlePage.module.css"
 import { Layout } from "../components"
