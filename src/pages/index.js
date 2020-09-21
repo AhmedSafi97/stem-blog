@@ -30,7 +30,7 @@ export const query = graphql`
     allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
         frontmatter {
-          date(formatString: "dd mm yyyy")
+          date(formatString: "DD/MM/YYYY")
           title
           category
           image {

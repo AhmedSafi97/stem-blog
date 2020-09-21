@@ -36,7 +36,7 @@ export const query = graphql`
     ) {
       nodes {
         frontmatter {
-          date(formatString: "dd mm yyyy")
+          date(formatString: "DD/MM/YYYY")
           title
           category
           image {
