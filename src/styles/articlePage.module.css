@@ -1,5 +1,6 @@
 .container {
   background-color: #fff;
+  box-shadow: var(--shadow);
 }
 
 .article {
@@ -28,6 +29,10 @@
 
 .mathematics {
   border-top: var(--primary) solid 5px;
+}
+
+.image {
+  height: 320px;
 }
 
 .title {

@@ -2,6 +2,7 @@
   background-color: #fff;
   grid-column: 1 / 9;
   margin-bottom: 18px;
+  box-shadow: var(--shadow);
 }
 
 .science {
@@ -28,6 +29,10 @@
   width: 50%;
 }
 
+.container section {
+  height: 200px;
+}
+
 .wrapper {
   width: 50%;
   padding: 18px;
@@ -40,6 +45,8 @@
   letter-spacing: 0;
   color: var(--primary);
   margin-bottom: 9px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .date {
@@ -56,11 +63,13 @@
   .container {
     grid-column: 1 / 5;
   }
+  .container section {
+    height: 120px;
+  }
   .title {
     font-size: 16px;
     line-height: 19px;
   }
-
   .date {
     font-size: 12px;
   }
